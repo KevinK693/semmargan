@@ -1,0 +1,22 @@
+.button {
+    color: aliceblue;
+    background-color: #7D703D;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Instrument Sans', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 8rem;
+  }
+  
+  .button:hover {
+    background-color: #8F7F45;
+    transform: scale(1.05);
+  }
+  
+  .button:active {
+    transform: scale(0.98);
+  }

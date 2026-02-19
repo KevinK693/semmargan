@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap");
+
+.home-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #7d703d;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-description {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.home-button {
+  color: aliceblue;
+  background-color: #7d703d;
+  border: none;
+  border-radius: 10px;
+  width: 15%;
+  min-height: 6vh;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 200rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  width: 100%;
+  margin-top: -5rem;
+}
