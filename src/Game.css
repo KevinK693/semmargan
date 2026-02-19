@@ -187,3 +187,99 @@
     border-radius: 10px;
     cursor: pointer;
   }
+
+  /* Responsive Mobile */
+@media (max-width: 768px) {
+  /* Texte "Trouve les anagrammes de :" */
+  .sentence {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Le mot (CHIEN, etc.) */
+  .word {
+    font-size: 2rem;
+  }
+  
+  /* "Trouvés : X/Y" */
+  .find {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  
+  /* L'input */
+  .input-container input {
+    width: 85%;
+    font-size: 1rem;
+    height: 25px;
+  }
+  
+  /* Le bouton Valider */
+  .bouton-valider {
+    width: 70%;
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+  
+  /* Footer : passe en colonne */
+  .container-footers {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  /* Footer gauche (timer) */
+  .game-footer-left {
+    width: 100%;
+    margin-left: 0;
+    min-height: 15vh;
+  }
+  
+  /* Timer plus petit */
+  .timer-container {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .timer {
+    font-size: 1.5rem;
+  }
+  
+  /* Footer droite (anagrammes trouvés) */
+  .game-footer-right {
+    width: 100%;
+    margin-right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  
+  .text-result {
+    font-size: 1rem;
+    margin-left: 20px;
+  }
+  
+  .words-find {
+    font-size: 1rem;
+    margin-left: 20px;
+  }
+  
+  /* Popups victoire/défaite */
+  .win-message,
+  .lose-message {
+    padding: 2rem;
+    font-size: 1.2rem;
+    width: 90%;
+  }
+  
+  .win-buttons,
+  .lose-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .win-button,
+  .lose-button {
+    width: 100%;
+    padding: 0.8rem;
+  }
+}

@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { getRandomWords } from "./data/words.ts";
 import type { WordData } from "./data/words.ts";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 function Game() {
   const [currentWord, setCurrentWord] = useState<WordData | null>(null);
@@ -59,6 +60,7 @@ function Game() {
     setUserInput("");
     setTimer(120);
     setIsWon(false);
+    setIsLost(false);
   };
 
   const handleSubmit = () => {
@@ -84,6 +86,13 @@ function Game() {
 
   return (
     <>
+      <Helmet>
+        <title>Jouer - Semmargan</title>
+        <meta
+          name="description"
+          content="Trouvez tous les anagrammes du mot en 60 secondes ! Testez votre rapidité et votre vocabulaire."
+        />
+      </Helmet>
       {isWon && (
         <div className="win-overlay">
           <div className="win-message">
@@ -106,8 +115,8 @@ function Game() {
             <p>😢 Temps écoulé !</p>
             <p>Tu as perdu...</p>
             <div className="lose-buttons">
-              <button className="lose-button">Rejouer</button>
-              <button className="lose-button">Accueil</button>
+            <button onClick={handleReplay} className="win-button">Rejouer</button>
+            <button onClick={handleHome} className="win-button">Accueil</button>
             </div>
           </div>
         </div>

@@ -27,7 +27,7 @@
   min-height: 6vh;
   font-size: 1.2rem;
   font-weight: 600;
-  cursor: pointer;
+  cursor: pointer; 
   transition: all 0.3s ease;
   margin-top: 200rem;
 }
@@ -37,4 +37,37 @@
   justify-content: center; /* Centre horizontalement */
   width: 100%;
   margin-top: -5rem;
+}
+
+/* Responsive Mobile */
+@media (max-width: 768px) {
+  /* Le titre SEMMARGAN */
+  .home-title {
+    font-size: 2.5rem;  /* Plus petit sur mobile */
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Le sous-titre "Bienvenue sur" */
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* La description */
+  .home-description {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Le conteneur du bouton */
+  .button-container {
+    margin-top: -3rem;  /* Rapproche le bouton */
+  }
+  
+  /* Le bouton lui-même */
+  .home-button {
+    width: 40%;  /* Plus large sur mobile */
+    min-height: 5vh;
+    font-size: 1rem;
+  }
 }

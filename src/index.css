@@ -65,3 +65,18 @@ footer {
   display: flex;
   justify-content: center;
 }
+
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+  
+  header {
+    padding: 1rem;
+  }
+  
+  .header-title {
+    font-size: 1.2rem;
+  }
+}
+
